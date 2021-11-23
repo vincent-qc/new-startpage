@@ -1,0 +1,120 @@
+body {
+    font-family: SourceCodePro;
+    background-color: #202028;
+    background-size: 100%;
+    overflow: hidden;
+    height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: #080614 3px 3px 2px;
+    animation: linkhover linear 0.18s 1 normal forwards;
+}
+
+td {
+    vertical-align: top;
+    width: 200px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+input, input:focus {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: SourceCodePro;
+    font-size: 40px;
+    color: #F0F0FF;
+}
+
+#time {
+    font-size: 110px;
+    height: 120px;
+    margin: 0;
+}
+
+#right-td {
+    padding-right: 5vw;
+}
+
+#productivity-title {
+    color: #FF5060;
+    font-size: 28px;
+    height: 12px;
+}
+
+#code-title {
+    color: #8040FF;
+    font-size: 28px;
+    height: 12px;
+}
+
+#entertainment-title {
+    color: #40FF70;
+    font-size: 28px;
+    height: 12px;
+}
+
+#others-title {
+    color: #FFA040;
+    font-size: 28px;
+    height: 12px;
+}
+
+.overview {
+    font-size: 50px;
+    color: #D0D0F0;
+    width: 600px;
+}
+
+.search {
+    padding-top: 6%;
+}
+
+.menu {
+    
+    line-height: 32px;
+}
+
+.productivity {
+    font-size: 20px;
+    color: #F07080;
+    width: fit-content;
+}
+
+.code {
+    font-size: 20px;
+    color: #9070F0;
+    width: fit-content;
+}
+
+.entertainment {
+    font-size: 20px;
+    color: #60F090;
+    width: fit-content;
+}
+
+.others {
+    font-size: 20px;
+    color: #F0C060;
+    width: fit-content;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('../fonts/sourcecodepro.otf');
+}
