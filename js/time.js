@@ -37,7 +37,7 @@ function getTime() {
     timeElement.innerHTML = h + ":" + m + '&nbsp;' + amPm;
 
     const greetingElement = document.getElementById('greeting');
-    greetingElement.innerHTML = "Good " + greeting + ",\nVincent";
+    greetingElement.innerHTML = "Good " + greeting + ",<br>Vincent";
 }
 
 function checkTime(i) {

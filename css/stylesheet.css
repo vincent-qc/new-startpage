@@ -44,6 +44,10 @@ input, input:focus {
     margin: 0;
 }
 
+#greeting {
+    margin-bottom: 32px;
+}
+
 #right-td {
     padding-right: 5vw;
 }
