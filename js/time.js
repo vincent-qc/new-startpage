@@ -43,6 +43,4 @@ function checkTime(i) {
 
 getTime();
 
-console.log("here");
-
 setInterval(getTime, 500);

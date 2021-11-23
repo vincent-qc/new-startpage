@@ -1,14 +1,12 @@
 body {
     font-family: SourceCodePro;
-    background-color: #202028;
     background-size: 100%;
     overflow: hidden;
     height: 90vh;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
+    background-size: cover;
 }
 
 a, a:visited {
