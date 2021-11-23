@@ -19,15 +19,19 @@ function getTime() {
         amPm = "AM";
     }
 
-    if(h > 3 && h < 12) {
+    const hours = today.getHours();
+
+    if(hours > 3 && hours < 12) {
         greeting = "Morning";
-    } else if(h >= 12 && h < 18) {
+    } else if(hours >= 12 && hours < 18) {
         greeting = "Afternoon";
-    } else if(h >= 18 && h < 20) {
+    } else if(hours >= 18 && hours < 20) {
         greeting = "Evening";
     } else {
         greeting = "Night";
     }
+
+    console.log(h)
 
     const timeElement = document.getElementById('time');
     timeElement.innerHTML = h + ":" + m + '&nbsp;' + amPm;
