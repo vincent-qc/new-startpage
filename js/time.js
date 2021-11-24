@@ -1,25 +1,18 @@
+const timeElement = document.getElementById('time');
+const greetingElement = document.getElementById('greeting');
+
 function getTime() {
-    let today = new Date();
-    let h = today.getHours();
-    let m = today.getMinutes();
-    let amPm;
-    let greeting = "Morning";
-
-    m = checkTime(m);
-
-    if(h > 12){
-        amPm = "PM";
-        h -= 12;
-    }else if(h == 12){
-        amPm = "PM";
-    }else if(h == 0){
-        amPm = "AM";
-        h = 12;
-    }else{
-        amPm = "AM";
-    }
-
+    const today = new Date();
     const hours = today.getHours();
+    const minutes = checkTime(today.getMinutes());
+    let meridiem;
+    let greeting;
+
+    if (hours < 12) {
+        meridiem = 'AM';
+    } else {
+        meridiem = 'PM';
+    }
 
     if(hours > 3 && hours < 12) {
         greeting = "Morning";
@@ -31,12 +24,7 @@ function getTime() {
         greeting = "Night";
     }
 
-    console.log(h)
-
-    const timeElement = document.getElementById('time');
-    timeElement.innerHTML = h + ":" + m + '&nbsp;' + amPm;
-
-    const greetingElement = document.getElementById('greeting');
+    timeElement.innerHTML = (hours - 12 > 0) ? hours - 12 : hours + ":" + minutes + '&nbsp;' + meridiem;
     greetingElement.innerHTML = "Good " + greeting + ",<br>Vincent";
 }
 
