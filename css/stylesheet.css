@@ -15,14 +15,15 @@ a, a:visited {
     text-decoration: none;
 }
 
+/*
 a:hover {
     text-shadow: #080614 3px 3px 2px;
-    animation: linkhover linear 0.18s 1 normal forwards;
 }
+*/
 
 td {
     vertical-align: top;
-    width: 200px;
+    width: 170px;
 }
 
 table {
@@ -34,18 +35,21 @@ input, input:focus {
     border: none;
     outline: none;
     font-family: SourceCodePro;
-    font-size: 40px;
+    font-size: 48px;
     color: #F0F0FF;
 }
 
 #time {
-    font-size: 110px;
+    font-size: 120px;
     height: 120px;
+    line-height: 92px;
     margin: 0;
 }
 
 #greeting {
+    font-size: 54px;
     margin-bottom: 32px;
+    margin-top: 0;
 }
 
 #right-td {
@@ -56,12 +60,14 @@ input, input:focus {
     color: #FF5060;
     font-size: 28px;
     height: 12px;
+    margin-top: 0;
 }
 
 #code-title {
     color: #8040FF;
     font-size: 28px;
     height: 12px;
+    margin-top: 0;
 }
 
 #entertainment-title {
@@ -76,14 +82,21 @@ input, input:focus {
     height: 12px;
 }
 
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 24px;
+    padding-bottom: 18px;
+}
+
 .overview {
-    font-size: 50px;
     color: #D0D0F0;
     width: 600px;
+    float: left;
 }
 
 .search {
-    padding-top: 6%;
+    padding-top: 9%;
 }
 
 .menu {
