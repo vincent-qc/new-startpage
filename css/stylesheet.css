@@ -2,12 +2,12 @@ body {
     font-family: SourceCodePro;
     background-size: 100%;
     overflow: hidden;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease 1.5s;
 }
 
 a, a:visited {
@@ -37,6 +37,7 @@ input, input:focus {
     font-family: SourceCodePro;
     font-size: 48px;
     color: #F0F0FF;
+    width: 500px;
 }
 
 #time {
@@ -71,23 +72,26 @@ input, input:focus {
 }
 
 #entertainment-title {
-    color: #40FF70;
+    color: #20E050;
     font-size: 28px;
     height: 12px;
 }
 
 #others-title {
-    color: #FFA040;
+    color: #F0A040;
     font-size: 28px;
     height: 12px;
 }
 
+/*
 .container {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
-    padding: 24px;
-    padding-bottom: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 24px;
+    padding: 26px;
+    padding-bottom: 22px;
+    margin-bottom: 70px;
 }
+*/
 
 .overview {
     color: #D0D0F0;
@@ -104,28 +108,43 @@ input, input:focus {
     line-height: 32px;
 }
 
-.productivity {
+.productivity-container {
     font-size: 20px;
     color: #F07080;
     width: fit-content;
 }
 
-.code {
+.productivity:hover {
+    animation: productivityHighlight ease-in-out 0.25s forwards;
+}
+
+.code-container {
     font-size: 20px;
     color: #9070F0;
     width: fit-content;
 }
 
-.entertainment {
+.code:hover {
+    animation: codeHighlight ease-in-out 0.25s forwards;
+}
+
+.entertainment-container {
     font-size: 20px;
-    color: #60F090;
+    color: #40D070;
+    width: fit-content;
+}
+.entertainment:hover {
+    animation: entertainmentHighlight ease-in-out 0.25s forwards;
+}
+
+.others-container {
+    font-size: 20px;
+    color: #F0B050;
     width: fit-content;
 }
 
-.others {
-    font-size: 20px;
-    color: #F0C060;
-    width: fit-content;
+.others:hover {
+    animation: othersHighlight ease-in-out 0.25s forwards;
 }
 
 /* Fonts */
@@ -138,4 +157,48 @@ input, input:focus {
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@keyframes productivityHighlight {
+    0% {
+        color: #F07080;
+        background-color: transparent;
+    }
+    100% {
+        color: #FFF0F0;
+        background-color: #F07080;
+    }
+}
+
+@keyframes codeHighlight {
+    0% {
+        color: #9070F0;
+        background-color: transparent;
+    }
+    100% {
+        color: #F0F0FF;
+        background-color: #9070F0;
+    }
+}
+
+@keyframes entertainmentHighlight {
+    0% {
+        color: #40D060;
+        background-color: transparent;
+    }
+    100% {
+        color: #F0FFF0;
+        background-color: #40D060;
+    }
+}
+
+@keyframes othersHighlight {
+    0% {
+        color: #F0B060;
+        background-color: transparent;
+    }
+    100% {
+        color: #F0F0F0;
+        background-color: #F0B050;
+    }
 }
