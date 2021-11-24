@@ -83,15 +83,16 @@ input, input:focus {
     height: 12px;
 }
 
-/*
+
+/* Uncomment when using boxed layout */
 .container {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 24px;
-    padding: 26px;
-    padding-bottom: 22px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* border-radius: 24px; */
+    /* padding: 26px; */
+    /* padding-bottom: 22px; */
     margin-bottom: 70px;
 }
-*/
+
 
 .overview {
     color: #D0D0F0;
