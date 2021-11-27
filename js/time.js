@@ -24,7 +24,7 @@ function getTime() {
         greeting = "Night";
     }
 
-    timeElement.innerHTML = ((hours - 12 > 0) ? hours - 12 : hours) + ":" + minutes + '&nbsp;' + meridiem;
+    timeElement.innerHTML = ((hours - 12 > 0) ? hours - 12 : (hours == 0) ? 12 : hours) + ":" + minutes + '&nbsp;' + meridiem;
     greetingElement.innerHTML = "Good " + greeting + ",<br>Vincent";
 }
 
