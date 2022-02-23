@@ -1,18 +1,19 @@
 body {
-    font-family: SourceCodePro;
-    background-size: 100%;
-    overflow: hidden;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    animation: fadeIn ease 1.5s;
+  font-family: SourceCodePro;
+  background-size: 100%;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  animation: fadeIn ease 1.5s;
 }
 
-a, a:visited {
-    color: inherit;
-    text-decoration: none;
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*
@@ -22,184 +23,186 @@ a:hover {
 */
 
 td {
-    vertical-align: top;
-    width: 170px;
+  vertical-align: top;
+  width: 200px;
 }
 
 table {
-    table-layout: fixed;
+  table-layout: fixed;
 }
 
-input, input:focus {
-    background: transparent;
-    border: none;
-    outline: none;
-    font-family: SourceCodePro;
-    font-size: 48px;
-    color: #F0F0FF;
-    width: 500px;
+input,
+input:focus {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: SourceCodePro;
+  font-size: 48px;
+  color: #f0f0ff;
+  width: 500px;
 }
 
 #time {
-    font-size: 120px;
-    height: 120px;
-    line-height: 92px;
-    margin: 0;
+  font-size: 120px;
+  height: 120px;
+  line-height: 92px;
+  margin: 0;
 }
 
 #greeting {
-    font-size: 54px;
-    margin-bottom: 32px;
-    margin-top: 0;
+  font-size: 54px;
+  margin-bottom: 32px;
+  margin-top: 0;
 }
 
 #right-td {
-    padding-right: 5vw;
+  padding-right: 5vw;
 }
 
 #productivity-title {
-    color: #FF5060;
-    font-size: 28px;
-    height: 12px;
-    margin-top: 0;
+  color: #ff5060;
+  font-size: 28px;
+  height: 12px;
+  margin-top: 0;
 }
 
 #code-title {
-    color: #8040FF;
-    font-size: 28px;
-    height: 12px;
-    margin-top: 0;
+  color: #8040ff;
+  font-size: 28px;
+  height: 12px;
+  margin-top: 0;
 }
 
 #entertainment-title {
-    color: #20E050;
-    font-size: 28px;
-    height: 12px;
+  color: #20e050;
+  font-size: 28px;
+  height: 12px;
 }
 
 #others-title {
-    color: #F0A040;
-    font-size: 28px;
-    height: 12px;
+  color: #f0a040;
+  font-size: 28px;
+  height: 12px;
 }
-
 
 /* Uncomment when using boxed layout */
 .container {
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* border-radius: 24px; */
-    /* padding: 26px; */
-    /* padding-bottom: 22px; */
-    margin-bottom: 70px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* border-radius: 24px; */
+  /* padding: 26px; */
+  /* padding-bottom: 22px; */
+  margin-bottom: 70px;
 }
 
-
 .overview {
-    color: #D0D0F0;
-    width: 600px;
-    float: left;
+  color: #d0d0f0;
+  width: 600px;
+  float: left;
 }
 
 .search {
-    padding-top: 9%;
+  padding-top: 9%;
 }
 
 .menu {
-    
-    line-height: 32px;
+  line-height: 32px;
 }
 
 .productivity-container {
-    font-size: 20px;
-    color: #F07080;
-    width: fit-content;
+  font-size: 20px;
+  color: #f07080;
+  width: fit-content;
 }
 
 .productivity:hover {
-    animation: productivityHighlight ease-in-out 0.25s forwards;
+  animation: productivityHighlight ease-in-out 0.25s forwards;
 }
 
 .code-container {
-    font-size: 20px;
-    color: #9070F0;
-    width: fit-content;
+  font-size: 20px;
+  color: #9070f0;
+  width: fit-content;
 }
 
 .code:hover {
-    animation: codeHighlight ease-in-out 0.25s forwards;
+  animation: codeHighlight ease-in-out 0.25s forwards;
 }
 
 .entertainment-container {
-    font-size: 20px;
-    color: #40D070;
-    width: fit-content;
+  font-size: 20px;
+  color: #40d070;
+  width: fit-content;
 }
 .entertainment:hover {
-    animation: entertainmentHighlight ease-in-out 0.25s forwards;
+  animation: entertainmentHighlight ease-in-out 0.25s forwards;
 }
 
 .others-container {
-    font-size: 20px;
-    color: #F0B050;
-    width: fit-content;
+  font-size: 20px;
+  color: #f0b050;
+  width: fit-content;
 }
 
 .others:hover {
-    animation: othersHighlight ease-in-out 0.25s forwards;
+  animation: othersHighlight ease-in-out 0.25s forwards;
 }
 
 /* Fonts */
 
 @font-face {
-    font-family: 'SourceCodePro';
-    src: url('../fonts/sourcecodepro.otf');
+  font-family: "SourceCodePro";
+  src: url("../fonts/sourcecodepro.otf");
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes productivityHighlight {
-    0% {
-        color: #F07080;
-        background-color: transparent;
-    }
-    100% {
-        color: #FFF0F0;
-        background-color: #F07080;
-    }
+  0% {
+    color: #f07080;
+    background-color: transparent;
+  }
+  100% {
+    color: #fff0f0;
+    background-color: #f07080;
+  }
 }
 
 @keyframes codeHighlight {
-    0% {
-        color: #9070F0;
-        background-color: transparent;
-    }
-    100% {
-        color: #F0F0FF;
-        background-color: #9070F0;
-    }
+  0% {
+    color: #9070f0;
+    background-color: transparent;
+  }
+  100% {
+    color: #f0f0ff;
+    background-color: #9070f0;
+  }
 }
 
 @keyframes entertainmentHighlight {
-    0% {
-        color: #40D060;
-        background-color: transparent;
-    }
-    100% {
-        color: #F0FFF0;
-        background-color: #40D060;
-    }
+  0% {
+    color: #40d060;
+    background-color: transparent;
+  }
+  100% {
+    color: #f0fff0;
+    background-color: #40d060;
+  }
 }
 
 @keyframes othersHighlight {
-    0% {
-        color: #F0B060;
-        background-color: transparent;
-    }
-    100% {
-        color: #F0F0F0;
-        background-color: #F0B050;
-    }
+  0% {
+    color: #f0b060;
+    background-color: transparent;
+  }
+  100% {
+    color: #f0f0f0;
+    background-color: #f0b050;
+  }
 }
