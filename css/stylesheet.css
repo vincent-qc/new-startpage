@@ -53,6 +53,7 @@ input:focus {
   font-size: 120px;
   margin-right: 40px;
   padding-bottom: 60px;
+  color: #f0f0ff;
 }
 
 #time {
@@ -108,7 +109,7 @@ input:focus {
 }
 
 .overview {
-  color: #d0d0f0;
+  color: #f0f0ff;
   width: 600px;
   float: left;
 }
