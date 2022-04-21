@@ -10,7 +10,7 @@ function getTime() {
     let greeting;
 
     let diffTime = Difference_In_Time = new Date('2022-05-04') - today;
-    let daysLeft = Math.ceil(diffTime / (1000 * 3600 * 24)) + 1;
+    let daysLeft = Math.floor(diffTime / (1000 * 3600 * 24)) + 1;
 
     // Example
     
