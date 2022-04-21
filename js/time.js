@@ -1,5 +1,6 @@
 const timeElement = document.getElementById('time');
 const greetingElement = document.getElementById('greeting');
+const countdownElement = document.getElementById('countdown');
 
 function getTime() {
     const today = new Date();
@@ -7,6 +8,12 @@ function getTime() {
     const minutes = checkTime(today.getMinutes());
     let meridiem;
     let greeting;
+
+    let diffTime = Difference_In_Time = new Date('2022-05-04') - today;
+    let daysLeft = Math.ceil(diffTime / (1000 * 3600 * 24)) + 1;
+
+    // Example
+    
 
     if (hours < 12) {
         meridiem = 'AM';
@@ -24,8 +31,11 @@ function getTime() {
         greeting = "Night";
     }
 
+    
+
     timeElement.innerHTML = ((hours - 12 > 0) ? hours - 12 : (hours == 0) ? 12 : hours) + ":" + minutes + '&nbsp;' + meridiem;
     greetingElement.innerHTML = "Good " + greeting + ",<br>Vincent";
+    countdownElement.innerHTML = (daysLeft == 1) ? "Tomorrow..." : (daysLeft < 1) ? "Good Luck." : daysLeft + " Days Left";
 }
 
 function checkTime(i) {

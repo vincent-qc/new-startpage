@@ -27,6 +27,12 @@ td {
   width: 200px;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 table {
   table-layout: fixed;
 }
@@ -40,6 +46,13 @@ input:focus {
   font-size: 48px;
   color: #f0f0ff;
   width: 500px;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 120px;
+  margin-right: 40px;
+  padding-bottom: 60px;
 }
 
 #time {
