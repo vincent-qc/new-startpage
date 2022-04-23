@@ -8,6 +8,7 @@ body {
   justify-content: center;
   background-size: cover;
   animation: fadeIn ease 1.5s;
+  margin: 0px;
 }
 
 a,
