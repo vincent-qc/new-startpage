@@ -3,14 +3,21 @@ const greetingElement = document.getElementById('greeting');
 const countdownElement = document.getElementById('countdown');
 
 function getTime() {
+    const diffDays = (d) => {
+        let oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+        let secondDate = new Date(d.getFullYear(),4,5);
+        let firstDate = d;
+        return Math.trunc(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+    }
+
     const today = new Date();
     const hours = today.getHours();
     const minutes = checkTime(today.getMinutes());
     let meridiem;
     let greeting;
 
-    let diffTime = Difference_In_Time = new Date('2022-05-04') - today;
-    let daysLeft = Math.trunc(diffTime / (1000 * 3600 * 24) + 1);
+
+    let daysLeft = diffDays(today);
 
     // Example
     
